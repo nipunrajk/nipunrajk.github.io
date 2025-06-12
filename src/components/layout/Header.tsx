@@ -1,10 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { SunIcon } from '@assets/icons/SunIcon'
-import { MoonIcon } from '@assets/icons/MoonIcon'
 
 const Header = () => {
-  const [isDarkMode, setIsDarkMode] = useState(true)
   const [isScrolled, setIsScrolled] = useState(false)
 
   // Handle scroll effect for header background change
@@ -20,11 +17,6 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
-
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode)
-    document.documentElement.classList.toggle('dark')
-  }
 
   return (
     <header

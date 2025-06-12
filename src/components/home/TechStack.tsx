@@ -1,5 +1,3 @@
-import { HugeiconsIcon } from '@hugeicons/react'
-
 const TechStack = () => {
   const techCategories = [
     {
