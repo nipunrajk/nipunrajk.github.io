@@ -1,47 +1,54 @@
+import { HugeiconsIcon } from '@hugeicons/react'
+
 const TechStack = () => {
   const techCategories = [
     {
-      name: "Publications in both stores",
+      name: 'Languages',
       technologies: [
-        { name: "App Store", icon: "🍎" },
-        { name: "Play Store", icon: "▶️" },
+        { name: 'Javascript' },
+        { name: 'Typescript' },
+        { name: 'HTML' },
+        { name: 'CSS' },
       ],
     },
     {
-      name: "Front-end Engineer Design",
+      name: 'Frontend Engineering & Design',
       technologies: [
-        { name: "React JS", icon: "⚛️" },
-        { name: "React Native", icon: "📱" },
-        { name: "Next.JS", icon: "▲" },
-        { name: "Vite", icon: "⚡" },
-        { name: "Figma", icon: "🎨" },
-        { name: "Jest", icon: "🃏" },
-        { name: "React Testing Library", icon: "🧪" },
+        { name: 'React JS' },
+        { name: 'Vue 3' },
+        { name: 'Next.JS' },
+        { name: 'Tailwind CSS' },
+        { name: 'Vitest / Jest' },
+        { name: 'Figma' },
       ],
     },
     {
-      name: "Languages",
+      name: 'Backend Engineering',
       technologies: [
-        { name: "Javascript", icon: "𝐉𝐒" },
-        { name: "Typescript", icon: "𝐓𝐒" },
+        { name: 'Node.js' },
+        { name: 'Laravel' },
+        { name: 'RESTful APIs' },
       ],
     },
     {
-      name: "Devops",
+      name: 'DevOps & Infra',
       technologies: [
-        { name: "Github Actions", icon: "🔄" },
-        { name: "Nginx", icon: "🌐" },
-        { name: "Docker", icon: "🐳" },
+        { name: 'Docker' },
+        { name: 'Nginx' },
+        { name: 'Bitbucket' },
+        { name: 'GitHub Actions' },
+        { name: 'Linux' },
       ],
     },
     {
-      name: "Back-end",
+      name: 'Tools & Productivity',
       technologies: [
-        { name: "Node.js", icon: "🟢" },
-        { name: "Prisma", icon: "▱" },
+        { name: 'ChatGPT' },
+        { name: 'Cursor' },
+        { name: 'Claude.ai' },
       ],
     },
-  ];
+  ]
 
   return (
     <section id='tech-stack' className='mb-20 mx-16'>
@@ -73,14 +80,6 @@ const TechStack = () => {
                   className='flex items-center space-x-3 group cursor-pointer 
                       transition-colors duration-200 hover:bg-grey-800/50 rounded-lg p-2 -mx-2'
                 >
-                  <div
-                    className='flex items-center justify-center w-8 h-8 bg-grey-800 rounded-full 
-                      transition-all duration-200 group-hover:bg-grey-700 group-hover:scale-110'
-                  >
-                    <span className='group-hover:scale-110 transition-transform duration-200'>
-                      {tech.icon}
-                    </span>
-                  </div>
                   <span className='text-white/90 transition-colors duration-200 group-hover:text-white'>
                     {tech.name}
                   </span>
@@ -91,7 +90,7 @@ const TechStack = () => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default TechStack;
+export default TechStack
