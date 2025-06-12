@@ -35,11 +35,10 @@ const Hero = () => {
 
           {/* Brief bio */}
           <p className='text-zinc-100 text-lg font-light leading-6 text-justify  max-w-6xl mb-10'>
-            I'm a software engineer based in [Your Location]. I enjoy creating
-            things that live on the internet, whether that be websites,
-            applications, or anything in between. I've been freelancing for a
-            year now while studying and have gained valuable knowledge from
-            different fields.
+            I'm a software engineer based in India. I enjoy creating things that
+            live on the internet, whether that be websites, applications, or
+            anything in between. I've been freelancing for a year now while
+            studying and have gained valuable knowledge from different fields.
           </p>
 
           {/* CTA Button */}
